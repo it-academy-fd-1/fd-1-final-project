@@ -1,0 +1,15 @@
+@use '../../global/mixins/base-font';
+
+.title-h1 {
+    @include base-font.baseFont;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+}
+
+.title-h2 {
+    @include base-font.baseFont;
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+}
