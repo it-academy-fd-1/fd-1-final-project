@@ -6,3 +6,4 @@ import './main.scss'
 
 // Import Components
 import './src/components/typography/typography.js'
+import './src/components/grid/grid.js'
