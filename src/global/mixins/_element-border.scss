@@ -1,0 +1,19 @@
+@use '../colors';
+@use 'sass:map';
+
+@function getBorderValue($border, $key) {
+    @if(map-get($border, $key)) {
+        @return map-get($border, $key);
+    }
+
+    @return 1px solid colors.$gray300;
+}
+
+
+@mixin elementBorder($border: (), $radius: 6px) {
+    border-top: getBorderValue($border, 'top');
+    border-left: getBorderValue($border, 'left');
+    border-right: getBorderValue($border, 'right');
+    border-bottom: getBorderValue($border, 'bottom');
+    border-radius: $radius;
+}

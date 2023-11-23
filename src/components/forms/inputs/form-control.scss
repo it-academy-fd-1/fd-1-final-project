@@ -1,0 +1,13 @@
+@use '../../../global/colors';
+@use '../../../global/mixins/element-border';
+@use '../../../global/mixins/base-font';
+
+.form-control {
+    @include element-border.elementBorder;
+    @include base-font.baseFont(colors.$dark);
+    font-size: 16px;
+    height: 40px;
+    display: block;
+    padding: 10px;
+    // outline: 1px solid colors.$primary;
+}

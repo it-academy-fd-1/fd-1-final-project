@@ -1,7 +1,7 @@
 @use '../colors';
 
-@mixin baseFont() {
+@mixin baseFont($color: colors.$gray600) {
     font-family: 'Inter';
     font-style: normal;
-    color: colors.$gray600;
+    color: $color;
 }
