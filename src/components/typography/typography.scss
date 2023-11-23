@@ -1,0 +1,71 @@
+@use '../../global/colors';
+
+.title-h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: -1.6px;
+    line-height: normal;
+}
+
+.title-h2 {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    line-height: normal;
+}
+
+.title-h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+}
+
+.title-h4 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.title-h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title-h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.text-small {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-base {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text-normal {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+}
+
+.text-muted {
+    color: colors.$gray500;
+}
