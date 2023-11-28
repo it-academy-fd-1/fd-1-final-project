@@ -1,0 +1,37 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.main-menu {
+    background-color: colors.$white;
+    padding: 17px 0;
+    border-top: 1px solid colors.$gray300;
+    border-bottom: 1px solid colors.$gray300;
+
+    &__nav {
+        display: flex;
+        grid-column-gap: 28px;
+    }
+
+    &__item {
+        color: colors.$dark;
+        text-decoration: none;
+
+        &:hover {
+            color: colors.$primary;
+        }
+
+        &--all {
+            display: flex;
+            align-items: center;
+
+            &::before {
+                content: '';
+                margin-right: 6px;
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url('/public/images/icons/control/menu.svg');
+            }
+        }
+    }
+}

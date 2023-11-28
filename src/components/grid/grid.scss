@@ -19,6 +19,10 @@ $columnsCount: 12;
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+
+    &-align-center {
+        align-items: center;
+    }
 }
 
 @for $i from 1 through $columnsCount {

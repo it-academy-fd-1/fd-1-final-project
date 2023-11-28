@@ -1,0 +1,37 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.btn {
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+
+    &-primary {
+        border-radius: 6px;
+        color: colors.$white;
+        background-color: colors.$primary;
+        border: none;
+    }
+
+    &-secondary {
+        background: colors.$white;
+        color: colors.$primary;
+        @include element-border.elementBorder
+    }
+}
+
+.btn-30 {
+    font-size: 13px;
+    padding: 7px 10px;
+}
+
+.btn-40 {
+    font-size: 16px;
+    padding: 10.5px 16px;
+}
+
+.btn-54 {
+    font-size: 18px;
+    padding: 16px 20px;
+}

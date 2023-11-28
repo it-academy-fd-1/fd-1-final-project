@@ -1,0 +1,42 @@
+@use '../../global/colors';
+
+.app-header {
+    height: 86px;
+    background-color: colors.$white;
+
+    &__form {
+        border: 1px solid colors.$primary;
+        border-radius: 6px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 7px;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: colors.$gray500;
+        text-decoration: none;
+
+        &:nth-child(1) {
+            margin-right: 23px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 15px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 18px;
+        }
+
+    }
+}
