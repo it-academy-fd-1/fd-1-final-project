@@ -3,11 +3,16 @@
 
 .form-select {
     background-color: colors.$white;
+    background-image: url('/images/icons/control/expand_more.svg');
+    background-repeat: no-repeat;
+    background-position: calc(100% - 7px) center;
     padding: 10px;
     color: colors.$dark;
     font-size: 16px;
     cursor: pointer;
+    appearance: none;
     @include element-border.elementBorder;
+
 
     &:focus {
         border: 1px solid colors.$primary;
