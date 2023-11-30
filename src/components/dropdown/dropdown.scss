@@ -1,0 +1,26 @@
+@use '../../global/mixins/element-border';
+@use '../../global/colors';
+
+.dropdown {
+    background-image: url('/images/icons/control/expand_more.svg');
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    position: relative;
+    padding-right: 24px;
+    cursor: pointer;
+
+    &__menu {
+        position: absolute;
+        padding: 24px;
+        background-color: colors.$white;
+        @include element-border.elementBorder;
+        width: 300px;
+        display: none;
+    }
+
+    &:hover {
+        .dropdown__menu {
+            display: block;
+        }
+    }
+}

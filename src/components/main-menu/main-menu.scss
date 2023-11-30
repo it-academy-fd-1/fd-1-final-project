@@ -3,21 +3,30 @@
 
 .main-menu {
     background-color: colors.$white;
-    padding: 17px 0;
+    height: 56px;
     border-top: 1px solid colors.$gray300;
     border-bottom: 1px solid colors.$gray300;
+    display: flex;
+    align-items: center;
 
     &__nav {
         display: flex;
-        grid-column-gap: 28px;
     }
 
-    &__item {
+    &__link {
         color: colors.$dark;
         text-decoration: none;
 
         &:hover {
             color: colors.$primary;
+        }
+    }
+
+    &__item {
+        margin-right: 28px;
+
+        &:first-child {
+            margin-right: 25px;
         }
 
         &--all {
