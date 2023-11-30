@@ -11,24 +11,15 @@
 
     &__nav {
         display: flex;
+        grid-column-gap: 30px;
     }
 
     &__link {
         color: colors.$dark;
         text-decoration: none;
-
-        &:hover {
-            color: colors.$primary;
-        }
     }
 
     &__item {
-        margin-right: 28px;
-
-        &:first-child {
-            margin-right: 25px;
-        }
-
         &--all {
             display: flex;
             align-items: center;
@@ -42,5 +33,30 @@
                 background-image: url('/images/icons/control/menu.svg');
             }
         }
+
+        &:hover {
+            .main-menu__link {
+                color: colors.$primary;
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+    }
+
+    &__ship-option-img {
+        display: inline-block;
+        width: 22px;
+        height: 16px;
+        margin-left: 6px;
+    }
+
+    &__dropdown-menu {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 12px;
     }
 }
