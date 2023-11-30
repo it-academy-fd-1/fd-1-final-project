@@ -12,5 +12,6 @@ import './src/components/forms/forms.js';
 import './src/components/button/button.js';
 import './src/components/app-header/app-header.js'
 import './src/components/main-menu/main-menu.js'
+import './src/components/app-logo/app-logo.js'
 
 import './src/global/utils.scss';
