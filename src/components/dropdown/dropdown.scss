@@ -18,11 +18,17 @@
         top: 100%;
         left: 50%;
         transform: translateX(-50%);
+
+        &--active {
+            display: block;
+        }
     }
 
-    &:hover {
-        .dropdown__menu {
-            display: block;
+    &--hover {
+        &:hover {
+            .dropdown__menu {
+                display: block;
+            }
         }
     }
 }

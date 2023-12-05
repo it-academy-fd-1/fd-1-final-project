@@ -14,5 +14,6 @@ import './src/components/app-header/app-header.js';
 import './src/components/main-menu/main-menu.js';
 import './src/components/app-logo/app-logo.js';
 import './src/components/dropdown/dropdown.js';
+import './src/components/side-nav/side-nav.js'
 
 import './src/global/utils.scss';
