@@ -13,7 +13,6 @@ const onChangeCurrency = (evt) => {
     }
 }
 
-
 const onChangeShipTo = (evt) => {
     if (evt.target.closest('.main-menu__ship-option-img')) {
         const img = evt.target.getAttribute('src');
