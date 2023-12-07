@@ -1,0 +1,25 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.popular-products {
+    padding: 20px 14px;
+    @include element-border.elementBorder;
+
+    &__item {
+        text-decoration: none;
+        color: colors.$gray600;
+        display: block;
+        padding: 11px 10px 10px 10px;
+        border-radius: 6px;
+
+        &:hover {
+            background-color: colors.$blue200;
+            color: colors.$dark;
+        }
+    }
+
+    &__slider {
+        height: 373px;
+        max-width: 600px;
+    }
+}

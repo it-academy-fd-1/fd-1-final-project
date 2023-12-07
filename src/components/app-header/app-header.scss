@@ -1,8 +1,11 @@
 @use '../../global/colors';
 
 .app-header {
-    height: 86px;
     background-color: colors.$white;
+
+    &__top-panel {
+        height: 86px;
+    }
 
     &__form {
         border: 1px solid colors.$primary;

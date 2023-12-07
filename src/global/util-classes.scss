@@ -1,3 +1,5 @@
+@use '../global/margins';
+
 .border-top-none {
     border-top: none;
 
@@ -57,4 +59,22 @@
 
 .w300 {
     width: 300px;
+}
+
+@each $key, $value in margins.$margins {
+    .mt-#{$key} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$key} {
+        margin-bottom: #{$value};
+    }
+
+    .ml-#{$key} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$key} {
+        margin-right: #{$value};
+    }
 }
