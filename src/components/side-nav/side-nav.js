@@ -1,6 +1,7 @@
 import './side-nav.scss'
 
 const sidenavTrigger = document.querySelector('.sidenav-trigger');
+
 const sideNav = document.querySelector('.side-nav');
 const overlay = document.querySelector('.side-nav__overlay');
 const closeIcon = document.querySelector('.side-nav__close-icon');

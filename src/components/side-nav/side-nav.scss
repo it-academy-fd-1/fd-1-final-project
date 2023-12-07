@@ -13,8 +13,6 @@
     &__overlay {
         background-color: colors.$overlayBg;
         height: 100%;
-        opacity: 0;
-        transition: opacity .5s;
     }
 
     &__menu {
@@ -34,8 +32,5 @@
             left: 0;
         }
 
-        .side-nav__overlay {
-            opacity: 1;
-        }
     }
 }
