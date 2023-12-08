@@ -18,5 +18,7 @@ import './src/components/app-logo/app-logo.js';
 import './src/components/dropdown/dropdown.js';
 import './src/components/side-nav/side-nav.js'
 import './src/components/popular-products/popular-products.js'
+import './src/components/auth/auth.js'
+import './src/components/panel/panel.js'
 
 import './src/global/util-classes.scss';

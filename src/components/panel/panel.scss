@@ -1,0 +1,12 @@
+@use '../../global/colors' ;
+
+.panel {
+    border-radius: 6px;
+    padding: 16px 16px 22px 16px;
+    &--orange {
+        background-color: colors.$orange;
+    }
+    &--blue-500 {
+        background-color: colors.$blue500;
+    }
+}

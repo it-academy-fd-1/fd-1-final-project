@@ -1,0 +1,19 @@
+@use '../../global/colors';
+
+.auth {
+    padding: 14px 10px 12px 10px;
+    background-color: colors.$blue100;
+    border-radius: 6px;
+    &__user {
+        display: flex;
+        align-items: center;
+        grid-column-gap: 9px;
+        margin-bottom: 13px;
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 7px;
+    }
+}
