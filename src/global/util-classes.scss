@@ -1,4 +1,5 @@
 @use '../global/margins';
+@use '../global/colors';
 
 .border-top-none {
     border-top: none;
@@ -77,4 +78,8 @@
     .mr-#{$key} {
         margin-right: #{$value};
     }
+}
+
+.text-dark {
+    color: colors.$dark;
 }

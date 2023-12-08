@@ -7,24 +7,30 @@ import 'swiper/css/pagination';
 
 new Swiper('.popular-products__slider', {
     modules: [Navigation, Pagination, Autoplay],
+    spaceBetween: 20,
     loop: true,
+    // slidesPerView: 3,
     autoplay: true,
-    spaceBetween: 10,
-    slidesPerView: 2,
-
-    // If we need pagination
+    speed: 1500,
+    // centeredSlides: true,
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
+        // bulletActiveClass: 'qwekjdshfkjdsh',
+        // bulletClass: 'asdkjhaskdjh'
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    
+    // breakpoints: {
+    //     768: {
+    //         slidesPerView: 2,
+    //         autoplay: {
+    //             delay: 2000,
+    //             pauseOnMouseEnter: true,
+    //         },
+    //     }
+    // }
 });
