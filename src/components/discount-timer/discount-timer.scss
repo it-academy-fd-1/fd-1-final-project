@@ -1,0 +1,67 @@
+@use '../../global/colors';
+
+
+@keyframes flipInX {
+    0% {
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        transform: perspective(400px) rotateX(90deg)
+    }
+
+    40% {
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        -webkit-transform: perspective(400px) rotateX(-20deg);
+        transform: perspective(400px) rotateX(-20deg)
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        transform: perspective(400px) rotateX(10deg)
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotateX(-5deg);
+        transform: perspective(400px) rotateX(-5deg)
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px)
+    }
+}
+
+.discount-timer {
+    &__items {
+        display: flex;
+        gap: 6px;
+        margin-top: 18px;
+    }
+
+    &__item {
+        width: 45px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: colors.$gray800;
+    }
+
+    &__value {
+        color: colors.$white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__description {
+        color: #FFF;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

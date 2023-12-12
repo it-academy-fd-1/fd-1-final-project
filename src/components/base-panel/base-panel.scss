@@ -1,0 +1,7 @@
+@use '../../global/colors';
+@use '../../global/mixins/element-border';
+
+.base-panel {
+    background-color: colors.$white;
+    @include element-border.elementBorder
+}
