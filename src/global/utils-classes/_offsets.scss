@@ -1,0 +1,38 @@
+@use '../../global/offsets';
+
+@each $key, $value in offsets.$offsets {
+    .mt-#{$key} {
+        margin-top: #{$value};
+    }
+
+    .mb-#{$key} {
+        margin-bottom: #{$value};
+    }
+
+    .ml-#{$key} {
+        margin-left: #{$value};
+    }
+
+    .mr-#{$key} {
+        margin-right: #{$value};
+    }
+}
+
+
+@each $key, $value in offsets.$offsets {
+    .pt-#{$key} {
+        padding-top: #{$value};
+    }
+
+    .pl-#{$key} {
+        padding-left: #{$value};
+    }
+
+    .pb-#{$key} {
+        padding-bottom: #{$value};
+    }
+
+    .pr-#{$key} {
+        padding-right: #{$value};
+    }
+}

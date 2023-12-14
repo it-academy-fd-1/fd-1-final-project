@@ -21,9 +21,8 @@ import './src/components/popular-products/popular-products.js'
 import './src/components/auth/auth.js'
 import './src/components/panel/panel.js'
 import './src/components/category-list/category-list.js'
+import './src/components/discount-product-card/discount-product-card.js'
 
 import './src/components/discount-products/discount-products.js'
 import './src/components/discount-timer/discount-timer.js'
 import './src/components/base-panel/base-panel.js'
-
-import './src/global/util-classes.scss';

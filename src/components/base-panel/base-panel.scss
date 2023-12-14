@@ -3,5 +3,7 @@
 
 .base-panel {
     background-color: colors.$white;
+    display: flex;
+    flex-wrap: wrap;
     @include element-border.elementBorder
 }

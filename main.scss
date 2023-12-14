@@ -1,6 +1,12 @@
 @use './src/global/fonts';
 @use './src/global/mixins/base-font';
 @use './src/global/colors';
+@use './src/global/utils-classes/border';
+@use './src/global/utils-classes/display';
+@use './src/global/utils-classes/images';
+@use './src/global/utils-classes/offsets';
+@use './src/global/utils-classes/size';
+@use './src/global/utils-classes/text';
 
 
 * {

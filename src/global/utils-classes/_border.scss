@@ -1,0 +1,31 @@
+.border-top-none {
+    border-top: none;
+
+    &:focus {
+        border-top: none;
+    }
+}
+
+.border-bottom-none {
+    border-bottom: none;
+
+    &:focus {
+        border-bottom: none;
+    }
+}
+
+.border-left-none {
+    border-left: none;
+
+    &:focus {
+        border-left: none;
+    }
+}
+
+.border-right-none {
+    border-right: none;
+
+    &:focus {
+        border-right: none;
+    }
+}

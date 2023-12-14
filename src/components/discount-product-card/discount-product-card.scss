@@ -1,0 +1,36 @@
+@use '../../global/colors';
+
+.discount-product-card {
+    width: 179px;
+    text-align: center;
+    padding-bottom: 17px;
+
+    border: {
+        right: 1px solid colors.$gray300;
+    }
+
+    &:first-child {
+        border-left: 1px solid colors.$gray300;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &__title {
+        margin-top: 11px;
+        margin-bottom: 7px;
+    }
+
+    &__badge {
+        padding: 3px 13px 4px 13px;
+        border-radius: 29px;
+        background: colors.$red100;
+        color: colors.$red200;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.2px;
+    }
+
+}

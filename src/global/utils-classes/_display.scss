@@ -1,0 +1,36 @@
+@use '../../global/breakpoints';
+
+$displays: (
+    flex,
+    block,
+    inline-block,
+    none,
+    inline,
+);
+
+
+@each $breakpoint, $width in breakpoints.$breakpoints {
+    @media screen and (min-width: $width) {
+        @each $display in $displays {
+            .d-#{$breakpoint}-#{$display} {
+                display: #{$display};
+            }
+        }
+    }
+}
+
+@each $display in $displays {
+    .d-#{$display} {
+        display: #{$display};
+    }
+}
+
+
+.d-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}

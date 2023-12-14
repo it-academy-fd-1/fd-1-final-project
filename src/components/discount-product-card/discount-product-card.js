@@ -1,0 +1,1 @@
+import './discount-product-card.scss';

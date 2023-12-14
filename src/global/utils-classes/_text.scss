@@ -1,0 +1,9 @@
+@use '../../global/colors';
+
+.text-dark {
+    color: colors.$dark;
+}
+
+.text-white {
+    color: colors.$white;
+}
