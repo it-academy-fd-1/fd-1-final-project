@@ -1,15 +1,27 @@
 @use '../../global/colors';
+@use '../../global/breakpoints';
+@use '../../global/mixins/media';
+@use 'sass:map';
 
 .app-header {
     background-color: colors.$white;
 
     &__top-panel {
-        height: 86px;
+        padding: 10px 0 18px;
+
+        @media screen and (min-width: map-get(breakpoints.$breakpoints, 'lg')) {
+            height: 86px;
+            padding: 0;
+        }
     }
 
     &__form {
-        border: 1px solid colors.$primary;
-        border-radius: 6px;
+        border: none;
+
+        @media screen and (min-width: map-get(breakpoints.$breakpoints, 'lg')) {
+            border: 1px solid colors.$primary;
+            border-radius: 6px;
+        }
     }
 
     &__icon {
@@ -59,5 +71,11 @@
     &__form-btn {
         padding-left: 23px;
         padding-right: 23px;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .form {
+        border: none;
     }
 }
