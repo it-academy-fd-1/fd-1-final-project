@@ -5,10 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Commerce:Sign-in</title>
+
+    <style>
+        .preloader {
+            display: none;
+        }
+
+        .preloader::before {
+            content: '';
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 10;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .preloader::after {
+            content: '...loading';
+            text-align: center;
+            color: red
+        }
+    </style>
 </head>
 
 <body>
+    <header class="mt-30">
+        <h1 class="title-h1 text-center">Sign In</h1>
+    </header>
 
+    <div class="preloader"></div>
+    <div class="container">
+        <div class="row justify-center">
+            <div class="col-xs-12 col-md-6">
+                <div class="base-panel pt-20 pl-20 pr-20 pb-20 mt-30">
+                    <form class="sign-in-form w-100">
+                        <input class="form-control mt-10 w-100" type="email" name="email"
+                            placeholder="Type your email...">
+                        <input class="form-control mt-10 w-100" type="password" name="password"
+                            placeholder="Type your password...">
+                        <button type="submit" class="btn btn-primary btn-40 mt-20">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module" src="./sign-in.js"></script>
 </body>
 
 </html>
