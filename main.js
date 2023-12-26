@@ -3,6 +3,8 @@ import 'reset-css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import 'swiper/css';
 
+import './configs/firebase.js'
+
 // Global Styles
 import './main.scss'
 
